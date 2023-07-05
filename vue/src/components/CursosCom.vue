@@ -51,24 +51,6 @@
         </div>
       </div>
     </div>
-    <div
-      class="center-align"
-      data-aos="fade-left"
-      data-aos-offset="300"
-      data-aos-duration="500"
-    >
-      <div class="wrap">
-        <a
-          href="https://wa.me/c/593980590333"
-          id="buttonWHA"
-          class="animated bounceOutLeft"
-        >
-          <span
-            >Escríbenos <i class="fab fa-whatsapp" aria-hidden="true"></i
-          ></span>
-        </a>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -77,6 +59,33 @@ export default {
   data() {
     return {
       courses: [
+        {
+          title: "Redes GPON",
+          image: "components/cursos/images/gpon.png",
+          description:
+            "Esta capacitación brinda a los participantes los conocimientos y herramientas necesarias...",
+          link: "https://academia.nodo.com.ec/redesgpon",
+        },
+        {
+          title: "Certificación Mikrotik MTCNA",
+          image: "components/cursos/images/mikrotik.png",
+          description:
+            "Obtendrás sólidos conocimientos para poder solventar problemas de...",
+          link: "https://academia.nodo.com.ec/mikrotik",
+        },
+        {
+          title: "Curso Online De Robótica",
+          image: "components/cursos/images/portadaROBO.png",
+          description: "Este Curso te permitirá dominar nociones básicas de...",
+          link: "/robotica",
+        },
+        {
+          title: "Curso Online De Inglés",
+          image: "components/cursos/images/portadaingles.png",
+          description:
+            "Este curso comprende un programa completo de inglés con el que cada...",
+          link: "/ingles",
+        },
         {
           title: "Redes GPON",
           image: "components/cursos/images/gpon.png",
@@ -122,6 +131,9 @@ export default {
 .gallery-grid .card {
   overflow: hidden;
   height: 500px;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px 0px;
 }
 .card img {
   width: 90%;
@@ -142,9 +154,6 @@ export default {
 }
 
 @media screen and (max-width: 1020px) {
-  .contenedor {
-    display: none;
-  }
   .gallery-grid {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -154,16 +163,6 @@ export default {
     height: auto;
     overflow: hidden;
   }
-  .caption h3 {
-    word-break: break-word;
-  }
-}
-
-.wrap {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #buttonWHA {
@@ -248,22 +247,5 @@ export default {
     height: 300px;
     opacity: 0;
   }
-}
-
-.fab {
-  font-size: 2rem;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-.fab:hover {
-  opacity: 0.7;
-}
-
-.fa-whatsapp {
-  color: white;
 }
 </style>

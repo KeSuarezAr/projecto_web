@@ -1,9 +1,12 @@
 <template>
   <div class="home">
-    <h1>UIDE</h1>
+    <div class="uide-logo">
+      <img src="../assets/uide-fondo.jpg" alt="logo" />
+    </div>
     <NavComponent />
-    <SobreAcademia />
+    <TestimonialComponent />
     <CursosCom />
+    <SobreAcademia />
   </div>
 </template>
 
@@ -12,9 +15,10 @@ import { Options, Vue } from "vue-class-component";
 import CursosCom from "@/components/CursosCom.vue";
 import NavComponent from "@/components/NavComponent.vue";
 import SobreAcademia from "@/components/SobreAcademia.vue";
+import TestimonialComponent from "@/components/TestimonialComponent.vue";
 
 @Options({
-  components: { NavComponent, SobreAcademia, CursosCom },
+  components: { NavComponent, SobreAcademia, CursosCom, TestimonialComponent },
 })
 export default class HomeView extends Vue {}
 </script>
@@ -23,6 +27,11 @@ export default class HomeView extends Vue {}
 .home {
   width: 100%;
   height: 100%;
-  background-color: #fff;
+}
+
+.uide-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>
